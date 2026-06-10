@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <script defer src="/_vercel/insights/script.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Nicola Sparks</title>
+
+<meta name="description" content="Welcome to my secret corner of the internet ✨">
+
+    <link rel="canonical" href="https://www.nicolasparks.com">
+    
+    <meta property="og:title" content="Nicola Sparks">
+    <meta property="og:description" content="welcome to my secret corner of the internet ✨">
+    <meta property="og:image" content="https://www.nicolasparks.com/og-image.png">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nicola Sparks">
+    <meta name="twitter:description" content="welcome to my secret corner of the internet ✨">
+    <meta name="twitter:image" content="https://www.nicolasparks.com/og-image.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:
+        radial-gradient(
+            circle at top,
+            rgba(255,182,193,.18),
+            transparent 60%
+        ),
+        #1b171c;
+
+    color:white;
+    font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",sans-serif;
+
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+
+    padding:40px 20px;
+}
+
+.container{
+    width:100%;
+    max-width:460px;
+}
+
+.hero{
+    position:relative;
+    overflow:hidden;
+    border-radius:32px;
+    margin-bottom:18px;
+}
+
+.hero img{
+    width:100%;
+    display:block;
+    aspect-ratio:3/4;
+    object-fit:cover;
+}
+
+.overlay{
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    padding:28px;
+    background:linear-gradient(
+        to top,
+        rgba(0,0,0,.85),
+        rgba(0,0,0,.25),
+        transparent
+    );
+}
+
+.overlay h1{
+    font-size:2rem;
+    font-weight:700;
+    margin-bottom:8px;
+}
+
+.overlay p{
+    opacity:.9;
+    line-height:1.4;
+}
+
+.button{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    color:white;
+
+    background:#1d1a1d;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:24px;
+
+    padding:20px;
+
+    font-size:1.05rem;
+    font-weight:600;
+
+    margin-bottom:12px;
+
+    transition:.2s ease;
+}
+
+.button:hover{
+    transform:translateY(-2px);
+}
+
+    .button i{
+    font-size:28px;
+    margin-right:10px;
+}
+
+    .social i{
+    font-size:24px;
+    color:white;
+    width:24px;
+    height:24px;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+}
+    
+button.button{
+    cursor:pointer;
+    width:100%;
+}
+
+.primary{
+    min-height:120px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:1.25rem;
+    font-weight:700;
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    position:relative;
+    overflow:hidden;
+
+    background-image:url("banner.png");
+
+    border:0;
+    outline:none;
+    box-shadow:none;
+
+    animation:glow 3s ease-in-out infinite;
+    }
+
+@keyframes glow{
+    0%,100%{
+        box-shadow:
+            0 0 8px rgba(255,182,193,.12),
+            0 0 18px rgba(255,182,193,.06);
+    }
+
+    50%{
+        box-shadow:
+            0 0 18px rgba(255,182,193,.22),
+            0 0 40px rgba(255,182,193,.12);
+    }
+}
+
+.primary::before{
+    content:"";
+
+    position:absolute;
+    inset:0;
+
+    background:rgba(0,0,0,.30);
+
+    z-index:1;
+}
+
+.primary span{
+    position:relative;
+    z-index:3;
+}
+
+.socials{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:12px;
+}
+
+.social{
+    text-align:center;
+    text-decoration:none;
+    color:white;
+
+    background:#1d1a1d;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:22px;
+
+    padding:18px 10px;
+
+    font-weight:600;
+
+    transition:.2s ease;
+}
+
+.social:hover{
+    transform:translateY(-2px);
+}
+
+@media(max-width:480px){
+
+    body{
+        padding:20px 16px;
+    }
+
+    .overlay h1{
+        font-size:1.8rem;
+    }
+
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="hero">
+
+        <!-- ЗАМІНИ НА СВОЄ ФОТО -->
+        <img src="nicola.JPG" alt="Nicola Sparks">
+
+        <div class="overlay">
+            <h1>Nicola Sparks</h1>
+            <p>welcome to my secret corner of the internet ✨</p>
+        </div>
+
+    </div>
+
+<div class="button primary">
+    <span>the page you're looking for 💋</span>
+</div>
+
+<a
+    class="button"
+    href="https://t.me/+BsqqriHr44AwMjFh"
+    target="_blank"
+    rel="noopener noreferrer"
+>
+    <i class="fa-brands fa-telegram-plane"></i>
+    Telegram
+</a>
+
+<div class="socials">
+
+    <a class="social"
+       href="https://www.instagram.com/nicolasparks.xo"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+
+    <a class="social"
+       href="https://www.threads.com/@nicolasparks.xo"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Threads">
+        <i class="fa-brands fa-threads"></i>
+    </a>
+
+    <a class="social"
+       href="https://www.facebook.com/people/Nicole-Sparks/pfbid0DkhSjYRercFDmjW4BmnLdWfBYJgdhaXA1r4aA5xSNuTrdMprtFxu9xv28y2XE95rl"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Facebook">
+        <i class="fa-brands fa-facebook"></i>
+    </a>
+
+    <a class="social"
+       href="https://tiktok.com/@nicolasparks.xo"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="TikTok">
+        <i class="fa-brands fa-tiktok"></i>
+    </a>
+
+    <a class="social"
+       href="https://x.com/nicolasparks_xo"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="X">
+        <i class="fa-brands fa-x-twitter"></i>
+    </a>
+
+</div>
+
+</div>
+
+
+
+</body>
+</html>
