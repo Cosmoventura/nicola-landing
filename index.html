@@ -131,9 +131,20 @@ button.button{
     outline:none;
     box-shadow:none;
 
-    box-shadow:
-    0 0 10px rgba(255, 182, 193, 0.15),
-    0 0 25px rgba(255, 182, 193, 0.08);
+    animation:glow 3s ease-in-out infinite;
+
+@keyframes glow{
+    0%,100%{
+        box-shadow:
+            0 0 8px rgba(255,182,193,.12),
+            0 0 18px rgba(255,182,193,.06);
+    }
+
+    50%{
+        box-shadow:
+            0 0 18px rgba(255,182,193,.22),
+            0 0 40px rgba(255,182,193,.12);
+    }
 }
 
 .primary::before{
