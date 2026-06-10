@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Nicola Sparks</title>
+
+<meta name="description" content="Welcome to my secret corner of the internet ✨">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#111111;
+    color:white;
+    font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",sans-serif;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    padding:40px 20px;
+}
+
+.container{
+    width:100%;
+    max-width:460px;
+}
+
+.hero{
+    position:relative;
+    overflow:hidden;
+    border-radius:32px;
+    margin-bottom:24px;
+}
+
+.hero img{
+    width:100%;
+    display:block;
+    aspect-ratio:3/4;
+    object-fit:cover;
+}
+
+.overlay{
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    padding:28px;
+    background:linear-gradient(
+        to top,
+        rgba(0,0,0,.85),
+        rgba(0,0,0,.25),
+        transparent
+    );
+}
+
+.overlay h1{
+    font-size:2rem;
+    font-weight:700;
+    margin-bottom:8px;
+}
+
+.overlay p{
+    opacity:.9;
+    line-height:1.4;
+}
+
+.button{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    color:white;
+
+    background:#1d1a1d;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:24px;
+
+    padding:20px;
+
+    font-size:1.05rem;
+    font-weight:600;
+
+    margin-bottom:14px;
+
+    transition:.2s ease;
+}
+
+.button:hover{
+    transform:translateY(-2px);
+}
+
+button.button{
+    cursor:pointer;
+    width:100%;
+    border:1px solid rgba(255,255,255,.08);
+}
+
+.primary{
+    padding:24px;
+    font-size:1.15rem;
+
+    background:linear-gradient(
+        135deg,
+        #2a1f2f,
+        #1f1a22
+    );
+}
+
+.socials{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:12px;
+}
+
+.social{
+    text-align:center;
+    text-decoration:none;
+    color:white;
+
+    background:#1d1a1d;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:22px;
+
+    padding:18px 10px;
+
+    font-weight:600;
+
+    transition:.2s ease;
+}
+
+.social:hover{
+    transform:translateY(-2px);
+}
+
+@media(max-width:480px){
+
+    body{
+        padding:20px 16px;
+    }
+
+    .overlay h1{
+        font-size:1.8rem;
+    }
+
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="hero">
+
+        <!-- ЗАМІНИ НА СВОЄ ФОТО -->
+        <img src="nicola.jpg" alt="Nicola Sparks">
+
+        <div class="overlay">
+            <h1>Nicola Sparks</h1>
+            <p>welcome to my secret corner of the internet ✨</p>
+        </div>
+
+    </div>
+
+    <button class="button primary" onclick="goToPage()">
+    the page you're looking for 💋
+</button>
+
+<a class="button" href="#" id="tgBtn">
+    Telegram 💌
+</a>
+
+    <div class="socials">
+
+        <a class="social" href="#">
+            Instagram
+        </a>
+
+        <a class="social" href="#">
+            Threads
+        </a>
+
+        <a class="social" href="#">
+            Facebook
+        </a>
+
+    </div>
+
+</div>
+
+<script>
+  function goToPage() {
+    var ua = navigator.userAgent.toLowerCase();
+    var bots = ['bot', 'crawler', 'spider', 'facebookexternalhit', 'facebot', 'meta'];
+    var isBot = bots.some(function(b){ return ua.indexOf(b) !== -1; });
+    if (!isBot) {
+      var p1 = atob('aHR0cHM6Ly93d3cuZmFudnVlLmNvbS9uaWNvbGFzcGFya3M/ZnJlZV90cmlhbD04ZTUzZWMxMi1m');
+      var p2 = atob('YjE0LTQ1M2QtOWU0MS1hZDY4YjQzOTkxMmE=');
+      setTimeout(function(){ window.open(p1 + p2, '_blank'); }, 200);
+    }
+  }
+</script>
+
+</body>
+</html>
