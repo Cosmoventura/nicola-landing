@@ -131,7 +131,9 @@ button.button{
     outline:none;
     box-shadow:none;
 
-    animation:breathe 4s ease-in-out infinite;
+    box-shadow:
+    0 0 10px rgba(255, 182, 193, 0.15),
+    0 0 25px rgba(255, 182, 193, 0.08);
 }
 
 .primary::before{
@@ -143,44 +145,6 @@ button.button{
     background:rgba(0,0,0,.30);
 
     z-index:1;
-}
-
-.primary::after{
-    content:"";
-
-    position:absolute;
-    top:0;
-    left:-150%;
-
-    width:50%;
-    height:100%;
-
-    background:linear-gradient(
-        90deg,
-        transparent,
-        rgba(255,255,255,.18),
-        transparent
-    );
-
-    transform:skewX(-20deg);
-
-    z-index:2;
-
-    animation:shine 6s infinite;
-}
-
-@keyframes shine{
-    0%{
-        left:-150%;
-    }
-
-    20%{
-        left:150%;
-    }
-
-    100%{
-        left:150%;
-    }
 }
 
 .primary span{
