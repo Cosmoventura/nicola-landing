@@ -128,8 +128,10 @@ button.button{
     background-image:url("banner.png");
 
     border:0;
-outline:none;
-box-shadow:none;
+    outline:none;
+    box-shadow:none;
+
+    animation:breathe 4s ease-in-out infinite;
 }
 
 .primary::before{
@@ -143,9 +145,47 @@ box-shadow:none;
     z-index:1;
 }
 
+.primary::after{
+    content:"";
+
+    position:absolute;
+    top:0;
+    left:-150%;
+
+    width:50%;
+    height:100%;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,.18),
+        transparent
+    );
+
+    transform:skewX(-20deg);
+
+    z-index:2;
+
+    animation:shine 6s infinite;
+}
+
+@keyframes shine{
+    0%{
+        left:-150%;
+    }
+
+    20%{
+        left:150%;
+    }
+
+    100%{
+        left:150%;
+    }
+}
+
 .primary span{
     position:relative;
-    z-index:2;
+    z-index:3;
 }
 
 .socials{
